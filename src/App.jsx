@@ -1,31 +1,35 @@
-import React from 'react'
-import Header from './MyComponent/UI/Header'
-import HeroSection from './MyComponent/UI/HeroSection'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Header from "./MyComponent/UI/Header";
+import HeroSection from "./MyComponent/UI/HeroSection";
+import FeatureSection from "./MyComponent/UI/FeatureSection";
+import FAQSection from "./MyComponent/UI/FAQSection";
+import HowItWorksSection from "./MyComponent/UI/HowItWorksSection";
+import IndustriesSection from "./MyComponent/UI/IndustriesSection";
+import Footer from "./MyComponent/UI/Footer";
 
 const App = () => {
     return (
         <div className="relative">
             {/* Grid Background */}
-            <div className="grid-background">
-                
-            </div>
 
             {/* Header */}
             <Header />
 
-            {/* Main */}
-            <main className="min-h-screen">
+            {/* Main Content */}
+            <main className="min-h-full pt-20">
                 <HeroSection />
+
+                <FeatureSection />
+                <FAQSection/>
+                <HowItWorksSection/>
+                <IndustriesSection/>
             </main>
 
             {/* Footer */}
-            <footer className="bg-muted py-12">
-                <div className="container px-5 mx-auto text-center">
-                    <p>Created by Shaan</p>
-                </div>
-            </footer>
+            <Footer/>
         </div>
-    )
-}
+    );
+};
 
-export default App
+export default App;
