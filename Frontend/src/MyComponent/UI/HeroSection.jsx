@@ -19,17 +19,16 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <section className="w-full pt-36 md:pt-48 pb-16 relative z-10 bg-gradient-to-b from-black via-[#17171d] to-[#21212b] min-h-[60vh] overflow-hidden">
+        <section className="w-full pt-8 md:pt-20 pb-16 relative z-10 bg-gradient-to-b from-black via-[#17171d] to-[#21212b] min-h-[60vh] overflow-hidden">
             {/* Decorative radial accent */}
             <div
-                aria-hidden
-                className="absolute inset-0 pointer-events-none z-0"
+                className="absolute inset-0  pointer-events-none z-0"
                 style={{
                     background:
                         "radial-gradient(ellipse 60% 50% at 50% 0%,rgba(168,85,247,0.18),transparent 70%)",
                 }}
             />
-            <div className="text-center max-w-5xl mx-auto px-4 space-y-3 -mt-10 relative z-10">
+            <div className="text-center max-w-5xl mx-auto px-4   relative z-10">
                 <div className="space-y-7">
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight
             bg-gradient-to-b from-white via-fuchsia-300 to-primary text-transparent bg-clip-text drop-shadow-lg">
